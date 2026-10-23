@@ -1,8 +1,9 @@
 #  Projeto em C — Estudos e Exercícios de Programação
 
-Repositório com os programas desenvolvidos durante meu aprendizado da **linguagem C**, organizados por aula, do clássico *Hello World* até vetores, matrizes e pequenos projetos aplicados (hospedagem, evento gamer e missão orbital).
+Repositório com os programas desenvolvidos durante meu aprendizado de programação, organizados por aula: da **linguagem C** (do clássico *Hello World* até vetores, matrizes e pequenos projetos aplicados) ao meu **primeiro contato com desenvolvimento web** (HTML, CSS e JavaScript).
 
 ![Linguagem](https://img.shields.io/badge/linguagem-C-00599C?logo=c&logoColor=white)
+![Web](https://img.shields.io/badge/web-HTML%20%7C%20CSS%20%7C%20JS-E34F26?logo=html5&logoColor=white)
 ![Status](https://img.shields.io/badge/status-em%20estudo-yellow)
 ![Licença](https://img.shields.io/badge/licença-MIT-green)
 
@@ -22,7 +23,7 @@ Repositório com os programas desenvolvidos durante meu aprendizado da **linguag
 
 ##  Sobre o projeto
 
-Este repositório reúne os exercícios e projetos feitos em aula e por conta própria, com o objetivo de praticar a lógica de programação e os fundamentos da linguagem C. Todos os programas rodam no terminal e interagem com o usuário via `printf` e `scanf`.
+Este repositório reúne os exercícios e projetos feitos em aula e por conta própria, com o objetivo de praticar a lógica de programação e os fundamentos da linguagem C. Os programas em C rodam no terminal e interagem com o usuário via `printf` e `scanf`. A partir da Aula 9, o repositório também inclui exemplos de páginas web que rodam direto no navegador.
 
 ##  Estrutura do repositório
 
@@ -36,12 +37,13 @@ PROJETO_EM_C/
 ├── AULA_6_C/               # Laços de repetição
 ├── AULA_7_C/               # Laços com validação de dados
 ├── AULA_8_C/               # Vetores (arrays) e matrizes
+├── AULA_9/                 # Introdução a HTML, CSS e JavaScript
 ├── PROJETO_HOSPEDAGEM/     # Projeto: cálculo de hospedagem (switch)
 ├── PROJETO_ARENA TECH/     # Projeto: custos de um evento gamer
 └── projeto_missao_orbital/ # Projeto: classificação de cadetes
 ```
 
-##  Conteúdo por aula
+## Conteúdo por aula
 
 | Aula | Tema | Programas |
 |------|------|-----------|
@@ -53,6 +55,7 @@ PROJETO_EM_C/
 | **6** | Laços de repetição | Frequência e notas, soma de pontos por rodada (`while`), cadastro de equipe com validação, tabuada |
 | **7** | Laços com validação | Compra com CPF e preços até digitar `0` (`exemplo_de_aula01.c`), cadastro de notas de alunos com validação (`exemplo_de_aula02.c`) |
 | **8** | Vetores e matrizes | `array.c`, salários de funcionários, valores acima da média, matriz de vendas |
+| **9** | Introdução à web (HTML, CSS e JS) | `exemplo-de-aula01-alerta.html` (JavaScript incorporado na página), `exemplo-de-aula02-calc.html` + `estilo.css` + `script.js` (calculadora de operações) |
 
 ##  Projetos de destaque
 
@@ -75,7 +78,7 @@ Gera um relatório de custos para um evento de games. A partir de participantes,
 - Custo de alimentação
 - Custo total do evento e custo médio por participante
 
-###  Missão Orbital
+### 🛰️ Missão Orbital
 Sistema de avaliação de cadetes. Para cada cadete, são lidas 3 pontuações (0 a 100, com validação), e o programa calcula total e média, classificando o resultado:
 
 | Média | Classificação |
@@ -87,15 +90,26 @@ Sistema de avaliação de cadetes. Para cada cadete, são lidas 3 pontuações (
 
 O programa usa `do-while` para permitir avaliar vários cadetes em sequência.
 
-##  Como compilar e executar
+###  Calculadora de Operações (Web)
+Primeiro projeto fora do terminal: uma página web com formulário que realiza as quatro operações básicas. O usuário informa dois valores, escolhe a operação (soma, subtração, multiplicação ou divisão) e clica em **Calcular** para ver o resultado.
 
-### Pré-requisitos
+- **HTML** — estrutura do formulário com campos numéricos (`input type="number"`), botões de rádio e campo de resultado somente leitura
+- **CSS** — layout com `grid` e `flexbox`, borda dupla, cores em tons de verde e efeito `hover` no botão
+- **JavaScript** — captura do clique com `addEventListener`, validação (exige os dois valores e uma operação selecionada, com `alert` em caso de erro) e cálculo com `switch/case`
+
+O arquivo `exemplo-de-aula01-alerta.html` complementa a aula mostrando como incorporar JavaScript direto no HTML, com `alert()` no cabeçalho e `document.write()` no corpo da página.
+
+## ⚙️ Como compilar e executar
+
+### Programas em C
+
+#### Pré-requisitos
 - Um compilador C, como o [GCC](https://gcc.gnu.org/)
   - **Windows:** instale o [MinGW](https://www.mingw-w64.org/) ou use o [Code::Blocks](https://www.codeblocks.org/)
   - **Linux:** `sudo apt install build-essential`
   - **macOS:** `xcode-select --install`
 
-### Passo a passo
+#### Passo a passo
 
 ```bash
 # 1. Clone o repositório
@@ -116,8 +130,17 @@ missao_orbital.exe        # Windows
 > gcc "PROJETO_ARENA TECH/projeto_arenatech_c.c" -o arena_tech -lm
 > ```
 
+### Páginas web (Aula 9)
+
+Não é preciso instalar nada: basta abrir o arquivo HTML no navegador (duplo clique ou *Abrir com…*). Mantenha `estilo.css` e `script.js` na mesma pasta do `exemplo-de-aula02-calc.html`.
+
+```
+AULA_9/exemplo-de-aula02-calc.html
+```
+
 ##  Conceitos praticados
 
+**Linguagem C**
 - Estrutura básica de um programa em C (`main`, `#include`)
 - Tipos de dados: `int`, `float`, `double`, `char` e strings
 - Entrada e saída: `printf` e `scanf`
@@ -128,10 +151,17 @@ missao_orbital.exe        # Windows
 - Vetores (arrays) e matrizes
 - Biblioteca `math.h`
 
+**Web (HTML, CSS e JavaScript)**
+- Estrutura de uma página HTML e formulários
+- Estilização com CSS (`grid`, `flexbox`, seletores de classe e de id)
+- JavaScript no HTML e em arquivo externo (`<script src>`)
+- Manipulação do DOM (`getElementById`, `querySelector`)
+- Eventos (`addEventListener`) e validação de campos
+
 ##  Autor
 
 Feito por **Robson de Araújo Andrade** — [GitHub](https://github.com/SEU-USUARIO) · [LinkedIn](https://linkedin.com/in/SEU-PERFIL)
 
 ---
 
- Se este repositório te ajudou de alguma forma, deixe uma estrela!
+⭐ Se este repositório te ajudou de alguma forma, deixe uma estrela!
