@@ -28,18 +28,19 @@ Este repositório reúne os exercícios e projetos feitos em aula e por conta pr
 
 ```
 PROJETO_EM_C/
-├── AULA_1_C/               # Primeiro contato com C
-├── AULA_2_C/               # Variáveis e cálculos básicos
-├── AULA_3_C/               # Entrada de dados e condicionais simples
-├── AULA_4_C/               # Exercícios de aplicação
-├── AULA_5_C/               # if / else if e equação do 2º grau
-├── AULA_6_C/               # Laços de repetição
-├── AULA_7_C/               # Laços com validação de dados
-├── AULA_8_C/               # Vetores (arrays) e matrizes
-├── AULA_9_C/               # Manipulação de arquivos de texto
-├── PROJETO_HOSPEDAGEM/     # Projeto: cálculo de hospedagem (switch)
-├── PROJETO_ARENA TECH/     # Projeto: custos de um evento gamer
-└── projeto_missao_orbital/ # Projeto: classificação de cadetes
+├── AULA_1_C/
+├── AULA_2_C/
+├── AULA_3_C/
+├── AULA_4_C/
+├── AULA_5_C/
+├── AULA_6_C/
+├── AULA_7_C/
+├── AULA_8_C/
+├── AULA_9_C/
+├── PROJETO_HOSPEDAGEM/
+├── PROJETO_ARENA TECH/
+├── projeto_missao_orbital/
+├── PROJETO_ECOCAMPUS/
 ```
 
 ## 📚 Conteúdo por aula
