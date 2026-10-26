@@ -78,7 +78,7 @@ Gera um relatório de custos para um evento de games. A partir de participantes,
 - Custo de alimentação
 - Custo total do evento e custo médio por participante
 
-### 🛰️ Missão Orbital
+###  Missão Orbital
 Sistema de avaliação de cadetes. Para cada cadete, são lidas 3 pontuações (0 a 100, com validação), e o programa calcula total e média, classificando o resultado:
 
 | Média | Classificação |
@@ -89,6 +89,55 @@ Sistema de avaliação de cadetes. Para cada cadete, são lidas 3 pontuações (
 | < 50 | Treinamento Reiniciado |
 
 O programa usa `do-while` para permitir avaliar vários cadetes em sequência.
+
+### EcoCampus — Monitor de Consumo Inteligente
+
+Sistema desenvolvido em linguagem C para analisar dados de consumo de água em diferentes áreas de um campus. O projeto utiliza arquivos de texto para ler informações, realizar cálculos e gerar relatórios com indicadores de consumo, contribuindo para o acompanhamento dos recursos hídricos.
+
+
+
+
+
+ ### Sobre o projeto
+
+O EcoCampus — Monitor de Consumo Inteligente foi desenvolvido como atividade acadêmica da disciplina de Algoritmos e Pensamento Computacional, com o objetivo de aplicar os fundamentos da programação em C na análise de dados de consumo de água.
+
+O sistema lê informações armazenadas em um arquivo de texto, processa os dados de diferentes locais do campus e apresenta indicadores que permitem identificar os níveis de consumo e os locais que ultrapassaram os limites estabelecidos.
+
+Além de exibir os resultados no terminal, o programa gera automaticamente um relatório em arquivo .txt, facilitando a consulta das informações.
+
+ Funcionalidades
+
+ Leitura de dados de consumo armazenados em arquivo de texto.
+
+ Cálculo do consumo total de água.
+
+ Cálculo do consumo médio por local.
+
+ Identificação do local com maior consumo.
+
+ Contabilização dos locais que ultrapassaram o limite estabelecido.
+
+ Geração automática de um relatório com os resultados.
+
+ Verificação da abertura dos arquivos para identificar possíveis erros.
+
+ Exibição dos indicadores no terminal.
+
+ Estrutura do projeto
+
+```ECOCAMPUS/
+├── main.c
+├── consumo_campus.txt
+└── relatorio_consumo.txt
+```
+Arquivos do projeto:
+
+main.c: contém o código-fonte responsável pela leitura, análise e processamento dos dados.
+
+consumo_campus.txt: armazena os nomes dos locais, os valores de consumo e os limites estabelecidos.
+
+relatorio_consumo.txt: recebe o relatório gerado automaticamente pelo programa.
 
 ###  Arquivos de Texto (Aula 9)
 Primeiro contato com persistência de dados: os programas deixam de apenas exibir resultados no terminal e passam a **gravar e ler arquivos `.txt`** com a biblioteca `stdio.h`.
@@ -101,7 +150,7 @@ Primeiro contato com persistência de dados: os programas deixam de apenas exibi
 
 Pontos trabalhados: ponteiro `FILE *`, `fopen()`, `fclose()`, `fprintf()`, `fgets()`, verificação de erro (`arquivo == NULL`) e os modos de abertura de arquivo. Execute primeiro o programa 1 para gerar o `tabuada.txt` antes de rodar o programa 3.
 
-## ⚙️ Como compilar e executar
+##  Como compilar e executar
 
 ### Pré-requisitos
 - Um compilador C, como o [GCC](https://gcc.gnu.org/)
